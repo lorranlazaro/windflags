@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
     final offset = renderBox.localToGlobal(Offset.zero);
 
     scrollController.animateTo(
-      offset.dy,
+      offset.dy + scrollController.offset,
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
