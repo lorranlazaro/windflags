@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:windflags/components/menu.dart';
-import 'package:windflags/components/secao.dart';
+import 'package:windflags/components/home.dart';
+import 'package:windflags/components/bandeiras.dart';
+import 'package:windflags/components/contato.dart';
+import 'package:windflags/components/depoimentos.dart';
+import 'package:windflags/components/grafica.dart';
+import 'package:windflags/components/inflaveis.dart';
+import 'package:windflags/components/services.dart';
+import 'package:windflags/components/wind_banner.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -58,35 +65,35 @@ class _HomePageState extends State<HomePage> {
         controller: scrollController,
         child: Column(
           children: [
-            Secao(
+            Home(
                 key: keySecao1,
                 color: const Color.fromRGBO(33, 150, 243, 1),
                 height: 800),
-            Secao(
+            Services(
                 key: keySecao2,
                 color: const Color.fromARGB(255, 54, 194, 23),
                 height: 800),
-            Secao(
+            WindBanner(
                 key: keySecao3,
                 color: const Color.fromRGBO(128, 31, 73, 1),
                 height: 800),
-            Secao(
+            Bandeiras(
                 key: keySecao4,
                 color: const Color.fromARGB(255, 122, 22, 24),
                 height: 800),
-            Secao(
+            Inflaveis(
                 key: keySecao5,
                 color: const Color.fromRGBO(167, 180, 21, 1),
                 height: 800),
-            Secao(
+            Grafica(
                 key: keySecao6,
                 color: const Color.fromARGB(255, 233, 115, 13),
                 height: 800),
-            Secao(
+            Depoimentos(
                 key: keySecao7,
                 color: const Color.fromARGB(255, 0, 0, 0),
                 height: 800),
-            Secao(
+            Contato(
                 key: keySecao8,
                 color: const Color.fromARGB(255, 85, 84, 85),
                 height: 800),
