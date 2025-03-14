@@ -66,37 +66,39 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             Home(
-                key: keySecao1,
-                color: const Color.fromRGBO(33, 150, 243, 1),
-                height: 800),
+              key: keySecao1,
+              color: const Color.fromRGBO(33, 150, 243, 1),
+              height: 200,
+            ),
             Services(
                 key: keySecao2,
                 color: const Color.fromARGB(255, 54, 194, 23),
-                height: 800),
+                height: 200),
             WindBanner(
-                key: keySecao3,
-                color: const Color.fromRGBO(128, 31, 73, 1),
-                height: 800),
+              key: keySecao3,
+              color: const Color.fromRGBO(128, 31, 73, 1),
+              height: 200,
+            ),
             Bandeiras(
                 key: keySecao4,
                 color: const Color.fromARGB(255, 122, 22, 24),
-                height: 800),
+                height: 200),
             Inflaveis(
                 key: keySecao5,
                 color: const Color.fromRGBO(167, 180, 21, 1),
-                height: 800),
+                height: 200),
             Grafica(
                 key: keySecao6,
                 color: const Color.fromARGB(255, 233, 115, 13),
-                height: 800),
+                height: 200),
             Depoimentos(
                 key: keySecao7,
                 color: const Color.fromARGB(255, 0, 0, 0),
-                height: 800),
+                height: 200),
             Contato(
                 key: keySecao8,
                 color: const Color.fromARGB(255, 85, 84, 85),
-                height: 800),
+                height: 200),
           ],
         ),
       ),
@@ -138,7 +140,7 @@ class _HomePageState extends State<HomePage> {
     final offset = renderBox.localToGlobal(Offset.zero);
 
     scrollController.animateTo(
-      offset.dy + scrollController.offset,
+      (offset.dy + scrollController.offset) - 56,
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );

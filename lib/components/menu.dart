@@ -18,6 +18,7 @@ class Menu extends StatelessWidget {
               "Home",
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 17,
               ),
             ),
           ),
@@ -27,6 +28,7 @@ class Menu extends StatelessWidget {
               "Serviços",
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 17,
               ),
             ),
           ),
@@ -36,6 +38,7 @@ class Menu extends StatelessWidget {
               "Wind Banners",
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 17,
               ),
             ),
           ),
@@ -45,15 +48,7 @@ class Menu extends StatelessWidget {
               "Bandeiras",
               style: TextStyle(
                 color: Colors.white,
-              ),
-            ),
-          ),
-          TextButton(
-            onPressed: () => onMenuClick(5),
-            child: const Text(
-              "Infláveis",
-              style: TextStyle(
-                color: Colors.white,
+                fontSize: 17,
               ),
             ),
           ),
@@ -63,6 +58,7 @@ class Menu extends StatelessWidget {
               "Gráfica",
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 17,
               ),
             ),
           ),
@@ -72,6 +68,7 @@ class Menu extends StatelessWidget {
               "Depoimentos",
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 17,
               ),
             ),
           ),
@@ -81,6 +78,7 @@ class Menu extends StatelessWidget {
               "Contato",
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 17,
               ),
             ),
           ),

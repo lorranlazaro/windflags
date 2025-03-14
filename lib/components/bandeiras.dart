@@ -9,7 +9,7 @@ class Bandeiras extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
+      width: double.infinity,  
       color: color,
       height: height,
       child: const Column(
