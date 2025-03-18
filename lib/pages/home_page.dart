@@ -67,8 +67,8 @@ class _HomePageState extends State<HomePage> {
           children: [
             Home(
               key: keySecao1,
-              color: const Color.fromRGBO(33, 150, 243, 1),
-              height: 200,
+              color: const Color.fromRGBO(14, 13, 13, 1),
+              height: 400,
             ),
             Services(
                 key: keySecao2,
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
     final offset = renderBox.localToGlobal(Offset.zero);
 
     scrollController.animateTo(
-      (offset.dy + scrollController.offset) - 56,
+      (offset.dy + scrollController.offset) - 56, //56,
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
